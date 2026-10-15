@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kudmayi Song</title>
+</head>
+<body>
+  <h2>🎵 Kudmayi</h2>
+
+  <audio id="song" controls autoplay playsinline>
+    <source
+      src="https://raw.githubusercontent.com/tushardavera06/test/main/Kudmayi.mp3"
+      type="audio/mpeg">
+  </audio>
+
+  <script>
+    const song = document.getElementById("song");
+    song.play().catch(() => {
+      console.log("Press Play to start the song.");
+    });
+  </script>
+</body>
+</html>
